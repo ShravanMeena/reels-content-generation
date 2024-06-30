@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"npm start --prefix client\" \"npm start --prefix server\""
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "elevenlabs": "^0.8.1",
+    "express": "^4.17.1",
+    "ffmpeg": "^0.0.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "googleapis": "^140.0.1",
+    "multer": "^1.4.3",
+    "nodemon": "^3.1.4",
+    "openai": "^4.52.2",
+    "uuid": "^10.0.0"
+  }
+}
