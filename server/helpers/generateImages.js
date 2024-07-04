@@ -5,7 +5,7 @@ dotenv.config();
 const openai = new OpenAI(process.env.OPENAI_API_KEY);
 
 module.exports = async function generateImages(prompt, n) {
-  const imageUrls = [];
+  const imageUrls = ["https://www.assemblyai.com/blog/content/images/2022/07/How-Imagen-Actually-Works.png","https://imagen.research.google/main_gallery_images/a-robot-couple-fine-dining.jpg"];
   const basePrompt = `
     You are DALL-E, an advanced AI image generation model. Your task is to create highly realistic, attractive, and visually stunning images that are HD (1024x1792), clear, and vertical.
 
@@ -22,19 +22,19 @@ module.exports = async function generateImages(prompt, n) {
     Here is the user prompt: ${prompt}
   `;
 
-  for (let i = 0; i < n; i++) {
-    const response = await openai.images.generate({
-      model: "dall-e-3",
-      prompt: basePrompt,
-      n: 1,
-      size: "1024x1792", // HD and vertical
-    });
+  // for (let i = 0; i < n; i++) {
+  //   const response = await openai.images.generate({
+  //     model: "dall-e-3",
+  //     prompt: basePrompt,
+  //     n: 1,
+  //     size: "1024x1792", // HD and vertical
+  //   });
 
-    if (response.data[0] && response.data[0].url) {
-      imageUrls.push(response.data[0].url);
-    } else {
-      console.error("Error generating image:", response);
-    }
-  }
+  //   if (response.data[0] && response.data[0].url) {
+  //     imageUrls.push(response.data[0].url);
+  //   } else {
+  //     console.error("Error generating image:", response);
+  //   }
+  // }
   return imageUrls;
 };
