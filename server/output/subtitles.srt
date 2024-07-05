@@ -1,8 +1,3 @@
 1
 00:00:00,000 --> 00:00:04,000
-I can't create images, but I can help you visualize the scene! 
-
-2
-00:00:04,000 --> 00:00:08,000
-Imagine a tall, clear glass filled with the most refreshing lemonade you've ever seen. The golden liquid shimmers in the light, with tiny bubbles dancing at the surface.  Ice cubes clink against the glass as condensation beads and rolls down its sides.  A perfectly sliced lemon wedge sits on the rim, its pale yellow contrasting with the vibrant green of a sprig of fresh mint. The lemonade rests against a backdrop of vibrant colors - think a gradient of oranges, yellows, and pinks - creating a sense of energy and excitement. The whole scene is bathed in a warm, inviting glow, making you want to reach out and grab that glass. 
-
+Once upon a time
